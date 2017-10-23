@@ -17,6 +17,9 @@ public class JudgeRouteCircle {
                 case 'R':
                     horizontal++;
                     break;
+                default:
+                	System.err.println("String must be composed of the following characters (case sensitive): 'UDLR' ");
+                	break;
             }
         }
         return ((horizontal == 0) && (vertical == 0));
@@ -26,6 +29,7 @@ public class JudgeRouteCircle {
 		System.out.println(judgeCircle("UUDDLRLR"));
 		System.out.println(judgeCircle("URLURL"));
 		System.out.println(judgeCircle("U"));
+		System.out.println(judgeCircle("fish"));
 	}
 
 }
